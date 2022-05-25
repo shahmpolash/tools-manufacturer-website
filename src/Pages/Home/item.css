@@ -1,0 +1,53 @@
+.items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+.item-title{
+    text-align: center;
+    color: skyblue;
+}
+.item{
+    border: 2px solid lightcoral;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.item:hover{
+    transform: scale(1.01);
+}
+img{
+    width: 300px;
+    max-height: 300px;
+}
+
+.quantity{
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    color: white;
+    background-color: #343a40;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/****
+
+Responsive
+
+****/
+
+@media screen and (max-width: 650px) {
+    .items{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+}
+@media screen and (min-width: 660px) and (max-width: 1000px) {
+    .items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}

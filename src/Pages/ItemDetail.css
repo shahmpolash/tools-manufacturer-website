@@ -1,0 +1,9 @@
+.itemdetail-image{
+    max-width: 500px;
+    height: auto;
+}
+
+.item-name{
+    width: 600px;
+    font-size: 25px;
+}

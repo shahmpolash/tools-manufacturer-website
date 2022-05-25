@@ -1,0 +1,6 @@
+.customer-img{
+    display: flex;
+    justify-content: center;
+    max-width: 300px;
+    border-radius: 40%;
+}
