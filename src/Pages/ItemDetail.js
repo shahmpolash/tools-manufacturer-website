@@ -22,8 +22,8 @@ const ItemDetail = () => {
         const name = event.target.name.value;
         const address = event.target.address.value;
         const email = event.target.email.value;
-        
         const order ={itemname, quantity, price, address, phone, email, name};
+
 
       
 
@@ -61,7 +61,7 @@ const ItemDetail = () => {
                 <input type="number" name="quantity" id="" placeholder='Quantity' />
                 <br />
                 <br />
-                <input type="number" name="price" id="" />
+                <input type="number" value={item.price} disabled name="price" id="" />
                 <br />
                 <br />
                 <h5>Your Details</h5>

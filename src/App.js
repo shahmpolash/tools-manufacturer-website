@@ -5,6 +5,7 @@ import AvailableItems from './Pages/AvailableItems';
 import AllUsers from './Pages/Dashboard/AllUsers';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
+import Payment from './Pages/Dashboard/Payment';
 import Review from './Pages/Dashboard/Review';
 import Home from './Pages/Home/Home';
 import ItemDetail from './Pages/ItemDetail';
@@ -52,6 +53,11 @@ function App() {
         <Route path='/manageitems' element={
           <RequireAuth>
             <ManageItem></ManageItem>
+          </RequireAuth>
+        }></Route>
+        <Route path='payment/:id' element={
+          <RequireAuth>
+            <Payment></Payment>
           </RequireAuth>
         }></Route>
         <Route path='/dashboard' element={
