@@ -1,26 +1,14 @@
 import React from 'react';
-import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
+import usePayment from '../../hooks/usePayment';
 
 const Payment = () => {
-
     const { id } = useParams();
-    const url = `http://localhost:5000/order/${id}`;
-    const { data: item, isLoading } = useQuery(['order', id], () => fetch(url, {
-        method: 'GET',
-        headers: {
-            'authorization': `Bearer ${localStorage.getItem('accessToken')}`
-        }
-    }).then(res => res.json()));
-
-    if (isLoading) {
-        return <h2>Loading</h2>
-    }
+    const [order] = usePayment(id)
     return (
-        <div className='container'>
-            <h2>Make Payment {item.name}</h2>
-            <h2>Pay for {id}</h2>
-           
+        <div className='container text-center mt-5'>
+            <h5>You are paying for: {order.itemname}</h5>
+            <h2>Payable amount: ${(order.price)*(order.quantity)} for {order.quantity} pics</h2>
         </div>
     );
 };
