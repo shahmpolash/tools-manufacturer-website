@@ -13,8 +13,9 @@ const Header = () => {
         signOut(auth);
     }
     return (
-        <header className='container'>
-            <Navbar collapseOnSelect  expand="lg" bg="dark" variant="dark">
+        <div className='bg-primary'>
+            <header className='container py-2'>
+            <Navbar collapseOnSelect  expand="lg" variant="dark">
                 <Container>
                     <Navbar.Brand as={Link} to="/">PowerTools</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -58,12 +59,21 @@ const Header = () => {
                                 <Nav.Link eventKey={2} as={Link} to="/login">
                                <div className='font-weight-bold text-primary bg-warning p-2'>Login</div>
                             </Nav.Link>}
+                            {
+                                user &&
+                                <Nav.Link eventKey={2}>
+                                <div>You: {user.email}</div>
+                             </Nav.Link>
+                             }
+                            
+
                         </Nav>
                         
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
         </header>
+        </div>
     );
 };
 

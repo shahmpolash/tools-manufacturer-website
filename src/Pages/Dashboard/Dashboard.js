@@ -16,7 +16,7 @@ const Dashboard = () => {
                     <Link className="nav-link active mx-2" aria-current="page" to={"my-orders"}>My Orders</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link active mx-2" to={"review"}>Review</Link>
+                    <Link className="nav-link active mx-2" to={"review"}>Post Review</Link>
                 </li>
                 { admin && <li className="nav-item">
                     <Link className="nav-link active mx-2" to={"all-users"}>All Users</Link>
