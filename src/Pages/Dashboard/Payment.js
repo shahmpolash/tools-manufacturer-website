@@ -16,7 +16,7 @@ const Payment = () => {
             <h2>Payable amount: ${(order.price) * (order.quantity)} for {order.quantity} pics</h2>
             
             <Elements stripe={stripePromise}>
-                <CheckoutForm />
+                <CheckoutForm order={order} />
             </Elements>
         </div>
     );

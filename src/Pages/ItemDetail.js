@@ -55,15 +55,14 @@ const ItemDetail = () => {
             <h5>Minimum Order {item.minimum}</h5>
             <h2>Order Now</h2>
             <form onSubmit={handleOrder}>
-                <input type="text" value={item.name} disabled name="itemname" id="" />
+                <input type="hidden" value={item.price} name="price" />
+                <input type="hidden" value={item.name} disabled name="itemname" id="" />
                 <br />
                 <br />
-                <input type="number" name="quantity" id="" placeholder='Quantity' />
+                <input type="number" name="quantity" id="" min={item.minimum} max={item.available} placeholder='Quantity' />
                 <br />
                 <br />
-                <input type="number" value={item.price} disabled name="price" id="" />
-                <br />
-                <br />
+                
                 <h5>Your Details</h5>
                 <input type="text" value={user.displayName} name="name" id="" placeholder='Your Full Name'  />
                 <br /><br />
