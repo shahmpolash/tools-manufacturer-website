@@ -49,11 +49,11 @@ const Review = () => {
                 <div class="form-group">
                     <label for="exampleFormControlSelect1">Your Rating</label>
                     <select name="rating" class="form-control" id="exampleFormControlSelect1">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                        <option>1 out of 5</option>
+                        <option>2 out of 5</option>
+                        <option>3 out of 5</option>
+                        <option>4 out of 5</option>
+                        <option>5 out of 5</option>
                     </select>
                 </div>
                 <div class="form-group">
