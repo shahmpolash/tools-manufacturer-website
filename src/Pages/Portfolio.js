@@ -17,13 +17,13 @@ Having worked online for over 10 years now I understand how to rank a website or
             </div>
             <div className='container mt-5'>
                 <h1>My Recent Projects</h1>
-                <h2>1)<a href=""> HTML Webpage Design</a></h2>
-                <h2>2)<a href=""> HTML Webpage Design</a></h2>
-                <h2>3)<a href=""> HTML Webpage Design</a></h2>
-                <h2>4)<a href=""> HTML Webpage Design</a></h2>
-                <h2>5)<a href=""> HTML Webpage Design</a></h2>
-                <h2>6)<a href=""> HTML Webpage Design</a></h2>
-                <h2>7)<a href=""> HTML Webpage Design</a></h2>
+                <h2>1)<a href="https://shahmpolash.github.io/my-name-is-shah/"> HTML Webpage Design</a></h2>
+                <h2>2)<a href="https://shahmpolash.github.io/ecommerce/"> eCommerce HTML Webpage Design</a></h2>
+                <h2>3)<a href="https://nifty-ptolemy-543383.netlify.app/"> Service Based HTML Webpage Design</a></h2>
+                <h2>4)<a href="https://thirsty-pasteur-1349ac.netlify.app/">JavaScript Project 1</a></h2>
+                <h2>5)<a href="https://nostalgic-hawking-a67de2.netlify.app/"> JavaScript Project 2</a></h2>
+                <h2>6)<a href="https://harmonious-bublanina-caab6b.netlify.app/">React JS Project 1</a></h2>
+                <h2>7)<a href="https://toy-house-3d775.web.app/">Wholesale Store React JS Project</a></h2>
             </div>
         </div>
     );
