@@ -13,7 +13,7 @@ const AllReviews = () => {
     return (
         <div className='container mt-5'>
             <h2 className='text-center'>What Customers Says {reviews.length}</h2>
-                <div className='d-flex'>
+                <div className='d-flex review'>
 
                 {
                     reviews.slice(0,3).map(review =>

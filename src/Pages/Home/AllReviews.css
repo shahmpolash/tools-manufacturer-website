@@ -4,3 +4,11 @@
     max-width: 300px;
     border-radius: 40%;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .review{
+        display: grid;
+        grid-template-columns: repeat(2, 1r);
+    }
+}
