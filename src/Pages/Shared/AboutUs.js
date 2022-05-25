@@ -10,9 +10,9 @@ const AboutUs = () => {
     return (
         <div>
             <div class="jumbotron text-center bg-primary">
-                <h1>Shah Power Tools</h1>
-                <p>We Are Power Tools Manufacturing Company</p>
-                <p>Founded in 2022, Shah Power Tools LTD. has become a professional manufacturer mainly for electric tools and scooters.As a professional designing, manufacturing company, Relying on professional technical team and production team, our company is striving to become a real professional supplier, to provide full solution to customers worldwide. 
+                <h1 className='text-white'>Shah Power Tools</h1>
+                <p className='text-white'>We Are Power Tools Manufacturing Company</p>
+                <p className='text-white'>Founded in 2022, Shah Power Tools LTD. has become a professional manufacturer mainly for electric tools and scooters.As a professional designing, manufacturing company, Relying on professional technical team and production team, our company is striving to become a real professional supplier, to provide full solution to customers worldwide. 
                     
                     <br />
                     we designs, manufactures and quality controls for all products. And also provide most economical means to assure customers to get satisfactory services, such as guaranteed quality, competitive prices, and short-period delivery. We endeavor to make the customers satisfied through in sight of a problem by their means. To innovate with the master spirit and carry out revolution to develop teamwork.To improve continuously. And to do everything honestly, trustfully, transparently, rapidly and easily.</p>
