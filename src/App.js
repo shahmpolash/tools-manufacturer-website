@@ -12,6 +12,7 @@ import ItemDetail from './Pages/ItemDetail';
 import Login from './Pages/Login';
 import ManageItem from './Pages/ManageItem';
 import OrderItem from './Pages/OrderItem';
+import Portfolio from './Pages/Portfolio';
 import Footer from './Pages/Shared/Footer';
 import Header from './Pages/Shared/Header';
 import NotFound from './Pages/Shared/NotFound';
@@ -26,6 +27,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
         <Route path='/item/:itemId' element={
           <RequireAuth>
             <ItemDetail></ItemDetail>

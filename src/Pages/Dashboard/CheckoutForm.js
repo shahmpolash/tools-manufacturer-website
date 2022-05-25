@@ -91,7 +91,7 @@ const CheckoutForm = ({order}) => {
                         },
                     }}
                 />
-                <button type="submit" disabled={!stripe || !clientSecret}>
+                <button type="submit" disabled={!stripe}>
                     Pay
                 </button>
             </form>

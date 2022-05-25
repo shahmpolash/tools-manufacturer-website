@@ -5,6 +5,10 @@
     border-radius: 40%;
 }
 
+.customer-review{
+    border: 15px solid skyblue;
+    border-radius: 5px;
+}
 
 @media only screen and (max-width: 600px) {
     .review{

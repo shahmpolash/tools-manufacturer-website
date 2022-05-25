@@ -46,15 +46,15 @@ const ItemDetail = () => {
 
     return (
         <div className='container w-50 mx-auto'>
-            <h2>You are ordering {item.name}</h2>
+            <h2 className='item-name'>You are ordering {item.name}</h2>
             
-            <img src={item.img} alt="" />
+            <img className='item-img' src={item.img} alt="" />
             <h3>Price: ${item.price} per pics</h3>
             <p>{item.description}</p>
             <h5>Available Quentity {item.available}</h5>
             <h5>Minimum Order {item.minimum}</h5>
             <h2>Order Now</h2>
-            <form onSubmit={handleOrder}>
+            <form className='form' onSubmit={handleOrder}>
                 <input type="hidden" value={item.price} name="price" />
                 <input type="hidden" value={item.name} disabled name="itemname" id="" />
                 <br />
@@ -72,7 +72,7 @@ const ItemDetail = () => {
                 <br /><br />
                 <textarea type="text" name="address" id="" placeholder='Address'  />
                 <br /><br />
-                <input type="submit" value="Place Order" />
+                <input className='btn btn-primary mb-5' type="submit" value="Place Order" />
             </form>
             
         </div>

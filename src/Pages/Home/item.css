@@ -33,6 +33,20 @@ button{
     border-radius: 10px;
 }
 
+.quantity p{
+    background-color: skyblue;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.item h5{
+    background-color: skyblue;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
+}
+
 /****
 
 Responsive

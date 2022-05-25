@@ -1,9 +1,28 @@
-.itemdetail-image{
-    max-width: 500px;
+.item-img{
+    width: 500px;
     height: auto;
+    border: 5px solid skyblue;
+    border-radius: 10px;
 }
-
 .item-name{
+    background-color: skyblue;
+    padding: 15px;
+    border-radius: 10px;
     width: 600px;
     font-size: 25px;
+}
+.form input{
+    font-size: 25px;
+    border-radius: 10px;
+    display: flex;
+    
+}
+
+.form textarea{
+    width: 500px;
+}
+
+.form button{
+    background-color: skyblue;
+    
 }
