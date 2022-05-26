@@ -14,6 +14,7 @@ import Login from './Pages/Login';
 import ManageItem from './Pages/ManageItem';
 import OrderItem from './Pages/OrderItem';
 import Portfolio from './Pages/Portfolio';
+import Profile from './Pages/Profile';
 import Footer from './Pages/Shared/Footer';
 import Header from './Pages/Shared/Header';
 import NotFound from './Pages/Shared/NotFound';
@@ -47,6 +48,11 @@ function App() {
         <Route path='/additem' element={
           <RequireAuth>
             <AddItem></AddItem>
+          </RequireAuth>
+        }></Route>
+        <Route path='/profile' element={
+          <RequireAuth>
+            <Profile></Profile>
           </RequireAuth>
         }></Route>
         <Route path='/order' element={

@@ -29,6 +29,21 @@ const MyOrders = () => {
                 });
         }
     }, [user])
+
+    const handleDelete = email =>{
+        const proceed = window.confirm('Want to remove This Item')
+        if(proceed){
+            const url = `http://localhost:5000/order?email=${user.email}`;
+            fetch(url, {
+                method: 'DELETE'
+            })
+            .then(res=>res.json())
+            .then(data=>{
+                const remaining = orders.filter(order => order._id !== email);
+                setOrders(remaining);
+            })
+        }
+    }
     return (
         <div>
             <h2>My Order List: {orders.length}</h2>
@@ -36,10 +51,11 @@ const MyOrders = () => {
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Item</th>
-                        <th scope="col">Quantity</th>
+                        <th scope="col">Items</th>
+                        <th scope="col">Qnty</th>
                         <th scope="col">Total Amounts</th>
-                        <th scope="col">Pay Now</th>
+                        <th scope="col">Pay</th>
+                        <th scope="col">Cancel</th>
                         
                     </tr>
                 </thead>
@@ -55,6 +71,9 @@ const MyOrders = () => {
 
                                 {(order.price && order.paid) && <button className='btn btn-primary'>Paid</button>}
                                 
+                                </td>
+                                <td>
+                                {(order.price && !order.paid) && <button className='btn btn-primary' onClick={() => handleDelete(order._id)}>X</button>}
                                 </td>
                            
                             
