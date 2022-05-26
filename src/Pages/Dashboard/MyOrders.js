@@ -10,7 +10,7 @@ const MyOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/order?email=${user.email}`, {
+            fetch(`https://whispering-oasis-90698.herokuapp.com/order?email=${user.email}`, {
                 method: 'GET',
                 headers:{
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -33,7 +33,7 @@ const MyOrders = () => {
     const handleDelete = email =>{
         const proceed = window.confirm('Want to remove This Item')
         if(proceed){
-            const url = `http://localhost:5000/order?email=${user.email}`;
+            const url = `https://whispering-oasis-90698.herokuapp.com/order?email=${user.email}`;
             fetch(url, {
                 method: 'DELETE'
             })

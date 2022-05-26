@@ -6,7 +6,7 @@ const AvailableItems = () => {
     const [items, setItems] = useState([]);
 
     useEffect( () =>{
-        fetch('http://localhost:5000/item')
+        fetch('https://whispering-oasis-90698.herokuapp.com/item')
         .then(res=>res.json())
         .then(data=>setItems(data));
     }, [])

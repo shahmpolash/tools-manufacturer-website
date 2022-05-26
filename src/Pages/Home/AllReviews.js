@@ -4,7 +4,7 @@ import './AllReviews.css';
 const AllReviews = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/review')
+        fetch('https://whispering-oasis-90698.herokuapp.com/review')
             .then(res => res.json())
             .then(data => setReviews(data));
 

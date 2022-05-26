@@ -13,7 +13,7 @@ const CheckoutForm = ({order}) => {
     const {price, quantity, name, email} = order;
 
     useEffect( () =>{
-        fetch('http://localhost:5000/create-payment-intent', {
+        fetch('https://whispering-oasis-90698.herokuapp.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

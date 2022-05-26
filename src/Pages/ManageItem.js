@@ -8,7 +8,7 @@ const [items, setItems] = useItems();
 const handleDelete = id =>{
     const proceed = window.confirm('Want to remove This Item')
     if(proceed){
-        const url = `http://localhost:5000/item/${id}`;
+        const url = `https://whispering-oasis-90698.herokuapp.com/item/${id}`;
         fetch(url, {
             method: 'DELETE'
         })

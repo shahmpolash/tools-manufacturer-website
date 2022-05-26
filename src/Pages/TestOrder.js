@@ -8,7 +8,7 @@ const TestOrder = () => {
     const { itemId } = useParams();
     const [item] = useItemDetail(itemId);
     const onSubmit = data => {
-        const url = `http://localhost:5000/order/`;
+        const url = `https://whispering-oasis-90698.herokuapp.com/order/`;
         fetch(url, {
             method: 'POST',
             headers: {

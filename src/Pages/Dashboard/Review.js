@@ -17,7 +17,7 @@ const Review = () => {
 
 
 
-        const url = `http://localhost:5000/review/`;
+        const url = `https://whispering-oasis-90698.herokuapp.com/review/`;
         fetch(url, {
             method: 'POST',
             headers: {

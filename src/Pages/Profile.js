@@ -13,7 +13,7 @@ const Profile = () => {
         const updatedUser = {name, email};
 
         // send data to the server
-        const url = `http://localhost:5000/user/`;
+        const url = `https://whispering-oasis-90698.herokuapp.com/user/`;
         fetch(url, {
             method: 'PUT',
             headers: {

@@ -5,7 +5,7 @@ const useUsers = () =>{
 
     useEffect( () =>{
       
-        fetch('http://localhost:5000/user')
+        fetch('https://whispering-oasis-90698.herokuapp.com/user')
         .then(res=>res.json())
         .then(data=>setUsers(data))
 
