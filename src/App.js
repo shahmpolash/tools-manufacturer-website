@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import AddItem from './Pages/AddItem';
 import AvailableItems from './Pages/AvailableItems';
+import Blog from './Pages/Blog';
 import AllUsers from './Pages/Dashboard/AllUsers';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MyOrders from './Pages/Dashboard/MyOrders';
@@ -27,6 +28,7 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/blog' element={<Blog></Blog>}></Route>
         <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
         <Route path='/item/:itemId' element={
           <RequireAuth>

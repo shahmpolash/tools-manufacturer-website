@@ -10,10 +10,8 @@ const SocialLogin = () => {
     
     let signInError;
 
-   
-
     if (error) {
-        signInError = <p className='text-danger'>Error: {error?.message}</p>
+        signInError = <p className='text-danger'>{error?.message}</p>
     }
 
     if (user) {
@@ -27,7 +25,7 @@ const SocialLogin = () => {
                 <p className='mt-2 px-2'>or</p>
                 <div style={{ height: '1px' }} className='bg-primary w-50'></div>
             </div>
-            {signInError}
+            
             <div className=''>
                 <button
                     onClick={() => signInWithGoogle()}
@@ -35,6 +33,7 @@ const SocialLogin = () => {
                     
                     <span className='px-2'>Connect Using Google</span>
                 </button>
+                {signInError}
             </div>
         </div>
     );
